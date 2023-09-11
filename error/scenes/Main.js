@@ -23,6 +23,7 @@ class HeyScene extends Phaser.Scene {
             .setInteractive()
             .on(Phaser.Input.Events.GAMEOBJECT_POINTER_DOWN, () => {
                 window.open("https://parrotgamesie.neocities.org/", "_blank");
+                window.close()
             })
             .on(Phaser.Input.Events.POINTER_OVER, () => {
                this.arrowLink.setTint(Phaser.Display.Color.RGBStringToColor("255, 0, 0"))
