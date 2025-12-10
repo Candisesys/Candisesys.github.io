@@ -33,6 +33,7 @@ async function setup() {
   Body.setAngularVelocity(sampleBody, initialAngle);
   sampleCharacter = Bodies.circle(width / 2, 0, 15);
   sampleBody.frictionAir = 0;
+  sampleCharacter.slop = 0;
   Composite.add(engine.world, sampleBody);
   Composite.add(engine.world, sampleCharacter);
 }
